@@ -5,7 +5,7 @@ class MoviesController < ApplicationController
   # GET /movies
   # GET /movies.json
   def index
-    @movies = Movie.all.order(:cached_votes_up => :desc)
+    @movies = Movie.all.order(:cached_weighted_score => :desc)
   end
 
   # GET /movies/1
@@ -53,7 +53,7 @@ class MoviesController < ApplicationController
   end
 
   def upvote
-    @movie.upvote_from current_user 
+    @movie.upvote_from current_user, :vote_weight => 3 
     redirect_to movies_path
   end
 
