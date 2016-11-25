@@ -1,24 +1,7 @@
-# README
+# Voting System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Many popular sites like Facebook or Youtube allow you to rate posts. This is exactly what we want to implement in this application.
 
-Things you may want to cover:
+We have used 'acts as votable' gem to build a reputation system that will allow authenticated users to upvote and downvote.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### !!!
